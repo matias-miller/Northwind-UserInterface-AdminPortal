@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - AdminFrontEnd</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/AdminFrontEnd.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light" style="background-color: #424245;">
+        <div class="container">
+            <a class="navbar-brand text-white" asp-area="" asp-page="/Index">AdminFrontEnd</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Search
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid custom-main" style="flex-grow: 1; background-color:#f5f5f7; margin: 0; padding: 0">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted" style="background-color: #424245">
+    <div class="container">
+        &copy; 2024 - AdminFrontEnd - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+<style>
+    .nav-link.dropdown-toggle::after {
+        display: none;
+    }
+    body {
+        color: #e6e6e6;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: left;
+    }
+     body {
+         color: #e6e6e6;
+         padding: 0;
+         margin: 0;
+         font-size: 16px;
+         font-family: "Open Sans", sans-serif;
+         font-weight: normal;
+         line-height: 1.5;
+         text-align: left;
+     }
+
+    .custom-main {
+        min-height: calc(100vh - 70px);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+</style>

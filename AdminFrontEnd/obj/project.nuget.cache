@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "RbZrPvYHbeVkunkY7F9M/cLsAiZwHaGEU31UszaiWur0dfoZpHu06v7RZAimHU2DaJbppLAsdW8cCTpeaVyGGw==",
+  "success": true,
+  "projectFilePath": "/Users/matias/RiderProjects/northwind-webapi/AdminFrontEnd/AdminFrontEnd.csproj",
+  "expectedPackageFiles": [
+    "/Users/matias/.nuget/packages/htmx/1.8.0/htmx.1.8.0.nupkg.sha512",
+    "/Users/matias/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/matias/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/matias/.nuget/packages/system.text.json/6.0.5/system.text.json.6.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

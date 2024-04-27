@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center custom-main">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<style>
+
+
+    .custom-main {
+        min-height: calc(100vh - 70px); /* Adjust based on your actual header and footer height */
+        max-height: calc(100vh - 70px); /* Ensures the container does not exceed viewport height */
+        overflow-y: auto; /* Adds scroll to the container */
+    }
+</style>
